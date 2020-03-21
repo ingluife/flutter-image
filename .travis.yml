@@ -8,7 +8,8 @@ services:
 
 install:
   - docker build -t ingluife/flutter:latest .
-  - docker run -d -p 127.0.0.1:80:80 --name flutter-container ingluife/flutter:latest
+  - docker run -d -t -p 127.0.0.1:80:80 --name flutter-container ingluife/flutter:latest
 
 script:
   - docker ps | grep -q flutter-container
+  - docker exec -ti flutter-container bash -c "flutter"
