@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk
 
-ARG FLUTTER_VERSION="https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.12.13+hotfix.8-stable.tar.xz"
+ARG FLUTTER_VERSION="https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_1.22.6-stable.tar.xz"
 ARG ANDROID_COMPILE_SDK="28"
 ARG ANDROID_BUILD_TOOLS="28.0.2"
 ARG ANDROID_SDK_TOOLS="4333796"
